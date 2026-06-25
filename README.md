@@ -1,58 +1,28 @@
-# Air Draw
+# Air Draw — Gesture-Based Drawing System
 
-Air Draw is a computer vision project that allows users to draw in the air using hand gestures instead of a mouse or stylus. The system tracks finger movements in real time and displays the drawing on the screen.
+Draw on a virtual canvas using only your hand and a webcam. No mouse, no stylus.
+
+## Tech Stack
+Python • OpenCV • MediaPipe • NumPy
 
 ## Features
-
-- Real-time hand tracking
-- Draw using finger gestures
-- Virtual canvas for sketching
-- Simple and interactive user interface
-- No physical drawing device required
-
-## Technologies Used
-
-- Python
-- OpenCV
-- MediaPipe
-- NumPy
+- Real-time hand tracking via MediaPipe
+- Draw using index finger gestures
+- Colour selection from on-screen palette
+- Erase, undo, and clear canvas
+- Adjustable brush size
+- Save artwork as an image
 
 ## How It Works
-
-1. The webcam captures live video.
-2. MediaPipe detects and tracks hand landmarks.
-3. The index finger position is used as a virtual pen.
-4. Finger movements are converted into drawing strokes on the canvas.
+1. Webcam captures live video
+2. MediaPipe detects 21 hand landmarks per frame
+3. Index finger tip position maps to canvas coordinates
+4. Gestures trigger colour/erase/undo actions
 
 ## Installation
-
-Clone the repository:
-
-```bash
 git clone https://github.com/sandhiyyaa-v/air-draw.git
-```
-
-Install dependencies:
-
-```bash
 pip install opencv-python mediapipe numpy
-```
-
-Run the project:
-
-```bash
-python air_draw.py
-```
-
-## Future Improvements
-
-- Multiple brush colors
-- Eraser functionality
-- Save drawings as images
-- Gesture-based controls
+python "air_draw 2.py"
 
 ## Author
-
-Sandhiya Tamizh
-
-ECE Student | Aspiring Software Developer
+Sandhiya V — ECE Student, Sathyabama Institute of Science and Technology
